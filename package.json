@@ -2,7 +2,7 @@
   "name": "image-ocr",
   "displayName": "Image OCR",
   "description": "Right-click any image in the Explorer to extract text via Tesseract.js OCR",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/manojdevworkspace/image-ocr.git"

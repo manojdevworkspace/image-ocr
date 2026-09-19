@@ -69,6 +69,10 @@ This extension has no configurable settings currently. Future versions will supp
 
 ## Release Notes
 
+### 0.0.4
+- Added demo preview to the README documentation.
+- General stability improvements and package optimizations.
+
 ### 0.0.3
 - Performance improvements and package optimizations.
 
