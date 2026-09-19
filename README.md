@@ -4,6 +4,8 @@
 
 Built by **Manoj Patode** using [Tesseract.js](https://github.com/naptha/tesseract.js).
 
+> ![Image OCR Demo](https://raw.githubusercontent.com/manojdevworkspace/image-ocr/main/demo.gif)
+
 > 🔒 **100% local & private** — all OCR processing happens on your machine. No API calls, no data ever leaves your computer.
 
 ---
@@ -66,6 +68,9 @@ This extension has no configurable settings currently. Future versions will supp
 ---
 
 ## Release Notes
+
+### 0.0.3
+- Performance improvements and package optimizations.
 
 ### 0.0.2
 - Added clipboard OCR via status bar button (`OCR Clipboard`)
