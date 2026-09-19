@@ -1,0 +1,70 @@
+{
+  "name": "image-ocr",
+  "displayName": "Image OCR",
+  "description": "Right-click any image in the Explorer to extract text via Tesseract.js OCR",
+  "version": "0.1.1",
+  "publisher": "ManojPatode",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "ocr",
+    "image",
+    "tesseract",
+    "text extraction",
+    "svg"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "imageOcr.extractText",
+        "title": "Extract Text (OCR)"
+      },
+      {
+        "command": "imageOcr.extractFromClipboard",
+        "title": "Extract Text from Clipboard Image (OCR)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "imageOcr.extractText",
+          "when": "resourceExtname =~ /\\.(png|jpg|jpeg|webp|bmp|tiff|tif|gif|svg)$/i",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "imageOcr.extractFromClipboard",
+        "key": "ctrl+shift+o",
+        "mac": "cmd+shift+o",
+        "when": "editorFocus || !editorFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {}
+}

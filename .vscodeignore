@@ -1,0 +1,19 @@
+# Source files
+src/**
+.vscode/**
+*.vsix
+cleanup-and-package.bat
+
+# Config files
+tsconfig.json
+.eslintrc.json
+.eslintignore
+.gitignore
+
+# Exclude test/doc folders inside deps only (NOT the modules themselves)
+node_modules/tesseract.js/tests/**
+node_modules/tesseract.js/docs/**
+node_modules/tesseract.js/examples/**
+node_modules/sharp/docs/**
+node_modules/sharp/test/**
+node_modules/sharp/src/**
