@@ -23,7 +23,7 @@
 ## ✨ Features
 
 - 🖱️ **Context Menu Integration:** Right-click any image file in the Explorer and select `Extract Text (OCR)`.
-- 📋 **Clipboard Support:** Quickly extract text directly from your system clipboard using the status bar button.
+- 📋 **Clipboard Support:** Quickly extract text directly from your system clipboard using the status bar button "OCR Clipboard" at the bottom right.
 - 📄 **Instant Editor Output:** Results open seamlessly in a new plaintext editor tab—ready to copy, edit, or save.
 - 🖼️ **Comprehensive Format Support:** Works out-of-the-box with all common image types:
 
@@ -38,7 +38,7 @@
 | **SVG** | `.svg` | Automatically converted to PNG first |
 
 ---
-
+ 
 ## 🚀 Usage
 
 1. Open any project folder or workspace in VS Code.
